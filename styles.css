@@ -1,8 +1,8 @@
 .container {
-  height: 320px;
-  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
 .hover {
  background-color: antiquewhite;
 }

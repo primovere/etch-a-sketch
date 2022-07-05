@@ -1,6 +1,5 @@
 const container = document.querySelector(".container");
-container.style.display = "flex";
-container.style.flexDirection = "column";
+
 
 for (let i = 0; i < 16; i++) {
   const flexContainer = document.createElement("div");
