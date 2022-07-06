@@ -24,7 +24,7 @@ function clear() {
 
 button.addEventListener("click", () => {
   let num = parseInt(prompt("How many squares would you like per side for the new grid? (Enter the number from 1 to 100)"))
-  if (0 < num <= 100) {
+  if (0 < num <= 100 && Number.isInteger(num)) {
     clear();
     createGrid(num);
   }
