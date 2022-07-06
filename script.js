@@ -16,17 +16,6 @@ function createGrid(num=16) {
   }
 }
 
-// function createGrid1(num=16) {
-//   for (let i = 0; i < num ** 2; i++) {
-//     const div = document.createElement("div");
-//     div.classList.add("grid");
-//     container.appendChild(div);
-//     div.setAttribute("style", "border: 1px solid black; box-sizing: border-box;");
-//     div.addEventListener("mouseenter", () => div.classList.add("hover"));
-//   }
-// }
-
-
 function clear() {
   const removedElements = document.querySelectorAll(".flex-container");
   removedElements.forEach((element) => container.removeChild(element));
