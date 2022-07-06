@@ -1,8 +1,10 @@
 .container {
+  height: 500px;
+  width: 500px;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
+
 .hover {
  background-color: antiquewhite;
 }

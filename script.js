@@ -10,11 +10,21 @@ function createGrid(num=16) {
     for (let i = 0; i < num; i++) {
       const div = document.createElement("div");
       flexContainer.appendChild(div);
-      div.setAttribute("style", "height: 20px; width: 20px; border: 1px solid black;");
+      div.setAttribute("style", `height: ${500 / num}px; width: ${500 / num}px; border: 1px solid black; box-sizing: border-box;`);
       div.addEventListener("mouseenter", () => div.classList.add("hover"));
     }
   }
 }
+
+// function createGrid1(num=16) {
+//   for (let i = 0; i < num ** 2; i++) {
+//     const div = document.createElement("div");
+//     div.classList.add("grid");
+//     container.appendChild(div);
+//     div.setAttribute("style", "border: 1px solid black; box-sizing: border-box;");
+//     div.addEventListener("mouseenter", () => div.classList.add("hover"));
+//   }
+// }
 
 
 function clear() {
