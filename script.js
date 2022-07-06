@@ -16,12 +16,19 @@ function createGrid(num=16) {
   }
 }
 
+
+function clear() {
+  const removedElements = document.querySelectorAll(".flex-container");
+  removedElements.forEach((element) => container.removeChild(element));
+}
+
 button.addEventListener("click", () => {
   let num = parseInt(prompt("How many squares would you like per side for the new grid? (Enter the number from 1 to 100)"))
   if (0 < num <= 100) {
-    container.remove;
+    clear();
     createGrid(num);
   }
 });
+
 
 createGrid();
